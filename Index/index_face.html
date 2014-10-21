@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>facelook</title>
+        
+        <!-- Our CSS stylesheet file -->
+        <link rel="stylesheet" href="assets/css/styles.css"/>
+        <!-- Our google we font-->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster+Two" /> 
+       	   
+        <!--draggable-->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <link rel="stylesheet" href="/resources/demos/style.css" />
+       
+        <script>  
+		jQuery.fn.setPosition = function (id) { 
+			var vSize = 130;
+			var index = id;
+			var vleft = 0;
+			var vtop=0;
+			
+			vleft = id%10;
+			vtop = parseInt(id/10);
+			
+			//alert("id"+ id+"top"+vtop  + "left" +vleft);			
+			this.css('position', 'absolute');   
+
+			//alert("top"+(vtop*vSize + 130) + "left" +(vleft*vSize + 130));
+		
+			this.css('top', (vtop*vSize + 130) + 'px'); 
+			//this.css('left', ($(window).width() - this.width()) / 2 + $(window).scrollLeft() + 'px'); 
+			this.css('left', (vleft*vSize + 130)+ 'px'); 
+			return this; 
+		} 
+
+		
+		$(function() {			
+			$( "#draggable img" ).each(function( index ) {
+				$(this).setPosition(index);	 
+			});
+			$( "#draggable img" ).draggable();
+    
+  });</script>
+        
+        <!--script>  $(function() {
+    $( "#draggable img" ).draggable();
+  });</script-->
+  
+        
+         
+   </head>
+    
+    
+    
+    <body>	
+    
+      
+        	<div id="banner">
+       	   		<h1> <img src="assets/img/ficon.png"></h1>
+       	   		<h2> FACELOOK </h2>
+            </div>
+          
+          <!---div><img src="assets/jquery.pointpoint/point0.png"></div-->
+   			
+   			<div class="faceWrapper">
+   			
+	          			<img src="assets/img/1.jpg"> 
+	          			<img src="assets/img/2.jpg">
+	         			<img src="assets/img/3.jpg">
+	          			<img src="assets/img/4.jpg"> 
+	         			<img src="assets/img/5.jpg">
+	         			<img src="assets/img/6.jpg">
+	          			<img src="assets/img/7.jpg"> 
+	         			<img src="assets/img/8.jpg">
+	          			<img src="assets/img/9.jpg">
+	         			<img src="assets/img/10.jpg"> 
+	          			<img src="assets/img/11.jpg">
+	          			<img src="assets/img/12.jpg">
+	          			<img src="assets/img/13.jpg"> 
+	          			<img src="assets/img/14.jpg">
+	          			<img src="assets/img/15.jpg">
+	         			<img src="assets/img/16.jpg"> 
+	         			<img src="assets/img/1.jpg">
+	          			<img src="assets/img/18.jpg">
+	          			<img src="assets/img/19.jpg"> 
+	          			<img src="assets/img/20.jpg">
+	         			<img src="assets/img/21.jpg">
+	          			<img src="assets/img/2.jpg"> 
+	          			<img src="assets/img/3.jpg">
+	          			<img src="assets/img/4.jpg">
+	          			<img src="assets/img/5.jpg">
+	         			<img src="assets/img/6.jpg">
+	          			<img src="assets/img/7.jpg">
+	          			<img src="assets/img/8.jpg">
+	          			<img src="assets/img/9.jpg">
+	          			<img src="assets/img/1.jpg">
+	         			<img src="assets/img/10.jpg"> 
+	          			<img src="assets/img/11.jpg">
+	          			<img src="assets/img/6.jpg">
+	          			<img src="assets/img/7.jpg">
+	          			<img src="assets/img/5.jpg">
+	          			<img src="assets/img/8.jpg">
+	          			<img src="assets/img/12.jpg">
+	          			<img src="assets/img/13.jpg"> 
+	          			<img src="assets/img/14.jpg">
+	          			<img src="assets/img/15.jpg">
+	         			<img src="assets/img/16.jpg"> 
+	         			<img src="assets/img/1.jpg">
+	         			<img src="assets/img/1.jpg"> 
+	          			<img src="assets/img/2.jpg">
+	         			<img src="assets/img/3.jpg">
+	          			<img src="assets/img/4.jpg"> 
+	         			<img src="assets/img/5.jpg">
+	         				<img src="assets/img/19.jpg"> 
+	          			<img src="assets/img/20.jpg">
+	         			<img src="assets/img/21.jpg">
+                    <div class="clr"></div></div>
+                                       
+                   
+                    <div id="draggable">
+		                    <img src="assets/img/f1.png">  
+		                    <img src="assets/img/f2.png">
+		                    <img src="assets/img/f3.png">              
+		                    <img src="assets/img/f4.png">
+					        <img src="assets/img/f5.png">
+					        <img src="assets/img/f6.png">
+					        <img src="assets/img/f7.png">
+					        <img src="assets/img/f8.png">  
+					        <img src="assets/img/f9.png">
+					        <img src="assets/img/f10.png">
+					        <img src="assets/img/f11.png">
+					        <img src="assets/img/f12.png">
+					        <img src="assets/img/f13.png">
+					        <img src="assets/img/f14.png">
+					        <img src="assets/img/f15.png">
+					        <img src="assets/img/f16.png">  
+					        <img src="assets/img/f17.png">
+					        <img src="assets/img/f18.png">
+					        <img src="assets/img/f19.png">
+					        <img src="assets/img/f20.png">
+					        <img src="assets/img/f21.png">
+					        <img src="assets/img/f22.png">
+					        <img src="assets/img/f23.png">
+					        <img src="assets/img/f24.png">
+					        <img src="assets/img/f25.png">
+					        <img src="assets/img/f26.png">
+					        <img src="assets/img/f27.png">
+					        <img src="assets/img/f28.png">
+					        <img src="assets/img/f29.png">
+					        <img src="assets/img/f30.png">
+					        <img src="assets/img/f31.png">
+					        <img src="assets/img/f14.png">
+					        <img src="assets/img/f15.png">
+					        <img src="assets/img/f16.png">  
+					        <img src="assets/img/f17.png">
+					        <img src="assets/img/f18.png">
+					        <img src="assets/img/f19.png">
+					        <img src="assets/img/f20.png">
+					        <img src="assets/img/f21.png">
+					        <img src="assets/img/f22.png"> 
+					         <img src="assets/img/f1.png">  
+		                    <img src="assets/img/f2.png">
+		                    <img src="assets/img/f3.png"> 
+					        <img src="assets/img/f10.png">
+					         <img src="assets/img/f16.png">  
+					        <img src="assets/img/f17.png">
+					         <img src="assets/img/f26.png">
+					        <img src="assets/img/f27.png">
+					        <img src="assets/img/f28.png">
+					        <img src="assets/img/f11.png">
+          </div>
+         
+          <div id="drag"><h1>DRAG ME! to share faces</h1></div>
+         
+          <div id="footer">
+          		<h1> Facelook © All Rights Reserved</h1>
+          		</div>
+    
+    </body>
+</html>

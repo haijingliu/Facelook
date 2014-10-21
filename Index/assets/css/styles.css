@@ -1,0 +1,135 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+}
+.clr {
+	clear: both;	
+}
+
+
+@font-face {
+	font-family: 'Conv_SourceCodePro-Bold';
+	src: url('font/SourceCodePro-Bold.eot');
+	src: local('☺'), url('font/SourceCodePro-Bold.woff') format('woff'), url('font/SourceCodePro-Bold.ttf') format('truetype'), url('font/SourceCodePro-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+html{
+	overflow-x:hidden;
+	position:relative;
+	box-shadow:0 0 100px rgba(0,0,0,0.3) inset;
+	-moz-box-shadow:0 0 100px rgba(0,0,0,0.3) inset;
+	-webkit-box-shadow:0 0 100px rgba(0,0,0,0.3) inset;
+	}
+
+
+body{
+	padding:0 0 0 ;
+	min-height:600px;
+
+}
+	
+
+#banner{
+	height:39px;
+	width:auto;
+	background-color:#465aa0;
+	display:block;
+}
+
+#banner h1{
+	margin:1px 100px 1px;
+	display:block;
+	float:left;
+	}
+
+h2 {
+	font-size:18pt;
+	font-family:"Conv_SourceCodePro-Bold", Menlo, serif;
+	letter-spacing:4px;
+    margin:0px 140px 2px;
+	float:right;
+	color:#e5edff;
+}
+
+
+.faceWrapper {
+	margin: 40px 100px 40px;
+	
+	
+}
+.faceWrapper img {
+	margin: 1px;
+	width: 130px;
+	height: 130px;
+	float: left;	
+}
+
+.draggable{
+	margin:1px;
+	z-index: 9999;
+	
+}
+
+.draggable img:{
+	position:absolute；
+}
+
+
+/*----drag_text----*/
+
+#drag{
+background-color:#e5edff;
+padding:2px;
+z-index:9999;
+}
+
+#drag h1{
+
+	font-family: 'Conv_SourceCodePro-Bold', Menlo,serif;
+	letter-spacing:12px;
+	font-size:26px;
+	font-weight:100;
+	text-align: end;
+	text-decoration: blink;
+	color:#465aa0;	
+	
+}
+/*----------------------------
+	The Footer
+-----------------------------*/
+
+
+#footer{
+	height:68px;
+	width:auto;
+	background-color:#465aa0;
+	display:block;
+	position:inherit;
+	}
+
+
+#footer h1{
+	font-family: 'Source Code Pro', sans-serif;
+	font-size: 12px;
+	padding: 22px;
+	margin:0 100px;
+	position: absolute;
+    float:left;
+	color: #ffffff;
+}
+
+
+
+
+
+
